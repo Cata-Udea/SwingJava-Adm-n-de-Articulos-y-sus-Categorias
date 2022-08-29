@@ -10,53 +10,50 @@ import java.util.ArrayList;
  *
  * @author catax
  */
-public class ArrayCategorias 
+public class ArrayArticulo 
 {
-    private ArrayList<Categoria> arregloCategorias;
+    private ArrayList<Articulo> arregloArticulos;
     
-    public ArrayCategorias()
+    public ArrayArticulo()
     {
-        arregloCategorias = new ArrayList<Categoria>();
+        arregloArticulos = new ArrayList<Articulo>();
         //cargar();
     }
     
     /*Metodo ara obtener una posicion*/
-    public Categoria obtener(int i)
+    public Articulo obtener(int i)
     {
-        return arregloCategorias.get(i);
+        return arregloArticulos.get(i);
     }
     
     /*Metodo para adicionar categoria*/
-    public void adicionar(Categoria c)
+    public void adicionar(Articulo a)
     {
-        arregloCategorias.add(c);
+        arregloArticulos.add(a);
     }
     
     /*Metodo buscra categoria por nombre*/
-    public Categoria buscar(String nombre)
+    public Articulo buscar(String nombre)
     {
-        for(int i=0; i< arregloCategorias.size();i++)
+        for(int i=0; i< arregloArticulos.size();i++)
         {
-            if(nombre.equals(arregloCategorias.get(i).getNombre()))
-                {return arregloCategorias.get(i);}
+            if(nombre.equals(arregloArticulos.get(i).getNombre()))
+                {return arregloArticulos.get(i);}
         }
         return null;
     }
     
     /*Metodo para eliminar categoria*/
-    public void eliminar(Categoria c)
+    public void eliminar(Articulo a)
     {
-        arregloCategorias.remove(c);
+        arregloArticulos.remove(a);
     }
     
     /*Metodo para obtener el tamanio del arreglo*/
     public int getTamanio()
     {
-        return arregloCategorias.size();
+        return arregloArticulos.size();
     }
-    
-    
-    
     
     
 }

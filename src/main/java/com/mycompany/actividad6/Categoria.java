@@ -15,6 +15,11 @@ public class Categoria
     private String descripcion;
     private String Estado;
 
+    public Categoria() {
+    }
+
+    
+    
     public Categoria(int id, String nombre, String descripcion, String Estado) {
         this.id = id;
         this.nombre = nombre;

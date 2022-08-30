@@ -313,7 +313,7 @@ public class frmArticulos extends javax.swing.JInternalFrame {
             tArticulos.setValueAt(a.getImagen(), i, 7);
             tArticulos.setValueAt(a.getEstado(), i, 8);
         }
-    
+    }
     
     private void btnNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevoActionPerformed
         // TODO add your handling code here:
